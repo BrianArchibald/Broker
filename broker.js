@@ -1,4 +1,6 @@
 const nav = document.getElementById("navbar");
+const topOfNav = nav.offsetTop;
+
 
 const counter1 = document.getElementById("counter1");
 const counter2 = document.getElementById("counter2");
@@ -31,10 +33,10 @@ let fourthTimer = 0;
 
 
 function startCounting() {
-
+	if(window.scrollY >= topOfNav) {
     counter1.textContent = firstTimer;
     let brokerTimer = setInterval(function(){
-      if(firstTimer <= 750) {
+      if(firstTimer <= 550) {
         counter1.textContent = firstTimer;
         firstTimer+=6;
       } else {
@@ -71,13 +73,13 @@ function startCounting() {
         clearInterval(fourthTimer);
       }
     }, 140);
-
+	}
   }
 
 
 
 
-window.addEventListener("scroll", startCounting);
+nav.addEventListener("scroll", startCounting);
 	
 	
 

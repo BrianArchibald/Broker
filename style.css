@@ -2,7 +2,7 @@
 
 
 * {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 #hero {
@@ -18,50 +18,50 @@
 
 /*   Nav Bar   */
 .navbar {
-  margin-bottom: 63vh;
+	margin-bottom: 63vh;
 }
 
 .navbar a {
-  color: #ef981f;
-  text-decoration: none;
-  font-size: 2em;
-  font-weight: 700;
+	color: #ef981f;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: 700;
 }
 #navbar-brand {
-  font-weight: 500;
+	font-weight: 500;
 }
 #navbar-brand:hover {
-  text-decoration: none;
-  color: #ededed;
+	text-decoration: none;
+	color: #ededed;
 }
 
 .navbar ul {
-  list-style: none;
-  padding-top: 2vh;
+	list-style: none;
+	padding-top: 2vh;
 }
 
 .navbar ul li {
-  display: inline;
-  margin-left: 1.2em;
+	display: inline;
+	margin-left: 1.2em;
 }
 
 .navbar ul li a {
-  color: #ededed;
-  font-size: 1.2em;
+	color: #ededed;
+	font-size: 1.2em;
 }
 
 .navbar ul li a:hover {
-  color: #ef981f;
-  cursor: pointer;
-  text-decoration: none;
+	color: #ef981f;
+	cursor: pointer;
+	text-decoration: none;
 }
 #sign-up {
-  padding: 7px;
-  border: 1px solid #ededed;
-  border-radius: 5px;
+	padding: 7px;
+	border: 1px solid #ededed;
+	border-radius: 5px;
 }
 .navbar ul li #sign-up:hover {
-  border: 1px solid #ef981f;
+	border: 1px solid #ef981f;
 }
 
 /*    Hero Counters    */
@@ -115,7 +115,7 @@
   border: 1px solid #ef981f;
 }
 #input-form-text{
-  color: grey;
+	color: grey;
 }
 
 
@@ -212,10 +212,10 @@
   color: #4d99cb;
 }
 .fa-dollar-sign {
-  color: #61ce6c;
+	color: #61ce6c;
 }
 .fa-paper-plane {
-  color: #6a92c4;
+	color: #6a92c4;
 }
 
 .fa-user-tie {
@@ -226,7 +226,7 @@
   color: #ed7f5a;
 }
 .fa-balance-scale {
-  color: #a58e54;
+	color: #a58e54;
 }
 
 #main #feedback {
@@ -330,4 +330,14 @@
 .footer ul li:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar ul {
+    padding-left: 0;
+  }
+  .navbar a {
+    display: block;
+    padding: 0;
+  }
 }
